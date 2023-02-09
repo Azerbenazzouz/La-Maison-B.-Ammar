@@ -1,21 +1,21 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AccessoiresComponent } from './accessoires/accessoires.component';
-import { BeforeAfterComponent } from './before-after/before-after.component';
-import { BrideByAhlemComponent } from './bride-by-ahlem/bride-by-ahlem.component';
-import { BrideByInesComponent } from './bride-by-ines/bride-by-ines.component';
-import { BrideByMirouComponent } from './bride-by-mirou/bride-by-mirou.component';
-import { BrideByRimComponent } from './bride-by-rim/bride-by-rim.component';
-import { CoiffureComponent } from './coiffure/coiffure.component';
-import { ColorationComponent } from './coloration/coloration.component';
-import { ExtensionDesCilsComponent } from './extension-des-cils/extension-des-cils.component';
+import { AccessoiresComponent } from './nos mariees/accessoires/accessoires.component';
 import { ForfaitsComponent } from './forfaits/forfaits.component';
 import { HomeComponent } from './HomeComponents/home/home.component';
-import { MaquillageComponent } from './maquillage/maquillage.component';
-import { OnglerieComponent } from './onglerie/onglerie.component';
+import { OnglerieComponent } from './nos services/onglerie/onglerie.component';
 import { PacksMarieesComponent } from './packs-mariees/packs-mariees.component';
 import { SoinCheveuxComponent } from './soin-produit/soin-cheveux/soin-cheveux.component';
 import { SoinVisageComponent } from './soin-produit/soin-visage/soin-visage.component';
+import { BrideByRimComponent } from './nos mariees/bride-by-rim/bride-by-rim.component';
+import { BrideByAhlemComponent } from './nos mariees/bride-by-ahlem/bride-by-ahlem.component';
+import { BrideByMirouComponent } from './nos mariees/bride-by-mirou/bride-by-mirou.component';
+import { BrideByInesComponent } from './nos mariees/bride-by-ines/bride-by-ines.component';
+import { BeforeAfterComponent } from './nos mariees/before-after/before-after.component';
+import { MaquillageComponent } from './nos services/maquillage/maquillage.component';
+import { ColorationComponent } from './nos services/coloration/coloration.component';
+import { ExtensionDesCilsComponent } from './nos services/extension-des-cils/extension-des-cils.component';
+import { CoiffureComponent } from './nos services/coiffure/coiffure.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
