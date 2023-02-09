@@ -1,0 +1,16 @@
+<!-- Start: before after ❤️❤️ -->
+<main>
+    <div class="container-x"
+        [style.--position]="value + '%'">
+        <div class="image-container">
+            <img class="image-before slider-image" alt="color photo" src={{img1}}>
+            <img class="image-after slider-image" alt="black and white" src={{img2}}>
+        </div>
+        <input  (input)="valueChanged($event)" value="value" type="range" class="slider" min="0" max="100" value="50" aria-label="Percentage of before photo shown">
+        <div class="slider-line" aria-hidden="true"></div>
+        <div class="slider-button" aria-hidden="true">
+            <i class="fas fa-sort" style="font-size: 30px;transform: rotate(90deg);width: 30px;height: 30px;text-align: center;"></i>
+        </div>
+    </div>
+</main><!-- End: before after ❤️❤️ -->
+<script src="../../js/abc.js"></script>

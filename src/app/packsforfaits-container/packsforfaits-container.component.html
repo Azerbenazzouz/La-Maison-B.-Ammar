@@ -1,0 +1,6 @@
+<div class="d-flex d-xxl-flex flex-column align-items-sm-center align-items-xxl-center text-center pb-5 mb-5">
+    <h1 class="pt-5 pb-5" style="font-family: Cinzel, serif;text-align: center;color: #9e7f55;">{{title}}<br /></h1>
+    <div *ngFor="let pack of packs">
+        <app-packforfait-item [title]="pack.title" [src]="pack.src"></app-packforfait-item>
+    </div>
+</div>

@@ -1,0 +1,48 @@
+<div class="d-flex justify-content-center">
+  <!-- make autopaly loop muted vedio -->
+  <video [muted]="true" [autoplay]="true" loop poster={{src}} >
+    <source src={{src}}  type="video/webm">
+  </video>
+  <nav class="container-xl navbar navbar-light navbar-expand-md d-flex justify-content-center" style="color: rgb(255,255,255);position: absolute;top: 0;width: 100%;">
+    <div class="container-fluid"><img class="me-3" src="/assets/img/logo-site-maison-ben-ammar.png?h=62762622e3c8846e3072623b4484c3df" width="138px" height="62px" alt="La maison ben ammar Logo" loading="auto">
+        <div class="collapse navbar-collapse d-xxl-flex justify-content-xxl-end ms-xl-3" id="navcol-1" style="font-family: Cinzel, serif;color: rgb(255,255,255);">
+            <ul class="navbar-nav" id="navItems" style="color: rgb(255,255,255);">
+                <li class="nav-item">
+                  <a class="nav-link link-light" [ngClass]="{'active':path==0}" routerLink="/" style="font-family: Cinzel, serif;text-shadow: 0px 0px 2px var(--bs-navbar-brand-color);">La&nbsp;maison</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="dropdown-toggle nav-link link-light" [ngClass]="{'active':path==1}" aria-expanded="false" data-bs-toggle="dropdown" routerLink="#" style="font-family: Cinzel, serif;text-shadow: 0px 0px 2px var(--bs-navbar-brand-color);">Nos mariées</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" routerLink="/bride-by-rim" >Bride by Rim</a>
+                      <a class="dropdown-item" routerLink="/bride-by-ahlem">Bride by Ahlem</a>
+                      <a class="dropdown-item" routerLink="/bride-by-mirou">Bride by Mirou</a>
+                      <a class="dropdown-item" routerLink="/bride-by-ines">Bride by Ines</a><a class="dropdown-item" routerLink="/before-after">before &amp; after</a><a class="dropdown-item" routerLink="/accessoires">Accessoires</a></div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="dropdown-toggle nav-link link-light" [ngClass]="{'active':path==2}" aria-expanded="false" data-bs-toggle="dropdown" routerLink="#" style="font-family: Cinzel, serif;text-shadow: 0px 0px 2px var(--bs-navbar-brand-color);">Nos soins &amp; produits</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" routerLink="/soins-visages">Soins visages</a>
+                      <a class="dropdown-item" routerLink="/soins-cheveux">Soins cheveux</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="dropdown-toggle nav-link link-light" [ngClass]="{'active':path==3}" aria-expanded="false" data-bs-toggle="dropdown" routerLink="#" style="font-family: Cinzel, serif;text-shadow: 0px 0px 2px var(--bs-navbar-brand-color);">Nos services</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" routerLink="/onglerie">Onglerie</a>
+                      <a class="dropdown-item" routerLink="/coloration">Coloration</a>
+                      <a class="dropdown-item" routerLink="/extension-des-cils">Extension des cils</a>
+                      <a class="dropdown-item" routerLink="/maquillage">Maquillage</a>
+                      <a class="dropdown-item" routerLink="/coiffure">Coiffure</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link-light" [ngClass]="{'active':path==4}" routerLink="/packs-mariees" style="font-family: Cinzel, serif;color: rgb(255,255,255);text-shadow: 0px 0px 2px var(--bs-navbar-brand-color);">Packs&nbsp;mariées</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link link-light" [ngClass]="{'active':path==5}" routerLink="/forfaits" style="font-family: Cinzel, serif;text-shadow: 0px 0px 2px var(--bs-navbar-brand-color);">Forfaits</a>
+                </li>
+            </ul>
+        </div><button data-bs-target="#navcol-1" data-bs-toggle="collapse" class="navbar-toggler"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+    </div>
+  </nav>
+  </div>

@@ -1,0 +1,31 @@
+<app-navbar [src]="src" [path]="path"></app-navbar>
+<div class="text-center container-sm" style="text-align: center;">
+    <h1 class="pt-5 pb-5" style="font-family: Cinzel, serif;text-align: center;color: #9e7f55;">Extension des cils<br></h1>
+    <h6 class="pb-5" style="font-family: Cinzel, serif;text-align: center;color: #9e7f55;"><br><span style="color: var(--h3_typography-color);">la maison lobna b.ammar</span><br></h6>
+    <p class="text-start pb-5" style="font-family: Cinzel, serif;text-align: center;">La technique ultime pour avoir, sans l’ajout de mascara, des cils plus longs, plus volumineux, plus foncés et à&nbsp;la courbure parfaite en toutes circonstances est un rêve aujourd’hui réalisable grâce aux extensions de cils semi-permanents avec les techniques cil à cil.<br></p>
+</div>
+<!-- TODO:after before -->
+<div class="pt-5 pb-4 d-flex justify-content-center">
+    <div class="container">
+        <div class="row pb-4" *ngFor="let container of data">
+            <div class="col-md-4" *ngFor="let image of container">
+                <div class="card">
+                    <div class="card-body">
+                        <app-ab [img1]="image.img1" [img2]="image.img2"></app-ab>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="pt-4">
+    <h1 class="text-center pb-5" style="font-family: Cinzel, serif;color: #9e7f55;">à regarder<br /></h1>
+    <div class="container pb-5">
+        <div class="row">
+            <div class="col-md-4"><iframe allowfullscreen frameborder="0" src="https://www.youtube.com/embed/DUSwKE8wg7Q" width="100%" height="100%" style="height: 30vh;min-height: 250px;"></iframe></div>
+            <div class="col-md-4"><iframe allowfullscreen frameborder="0" src="https://www.youtube.com/embed/Pby3So-UV_8" width="100%" height="100%" style="height: 30vh;min-height: 250px;"></iframe></div>
+            <div class="col-md-4"><iframe allowfullscreen frameborder="0" src="https://www.youtube.com/embed/ezxvAMl-7fg" width="100%" height="100%" style="height: 30vh;min-height: 250px;"></iframe></div>
+        </div>
+    </div>
+</div>
+<app-footer2></app-footer2>

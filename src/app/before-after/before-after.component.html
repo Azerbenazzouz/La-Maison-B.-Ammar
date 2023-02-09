@@ -1,0 +1,17 @@
+<app-navbar [src]="src" [path]="path"></app-navbar>
+<div>
+    <h1 class="pt-5 pb-5" style="font-family: Cinzel, serif;text-align: center;color: #9e7f55;">Before &amp; After<br></h1>
+    <h6 class="pb-4" style="font-family: Cinzel, serif;text-align: center;color: #9e7f55;">la maison lobna ben ammar<br></h6>
+    <p class="pb-5" style="font-family: Cinzel, serif;text-align: center;">Un Maquillage qui vous ressemble, dans le plus grand respect de votre beauté naturelle le jour de votre mariage.<br></p><!-- Start: 1 Row 3 Columns -->
+    <div *ngFor="let container of data">
+        <div class="container pb-3">
+            <div class="row">
+                <div *ngFor="let image of container" class="col-md-4 p-3">
+                    <app-ab [img1]="image.img1" [img2]="image.img2"></app-ab>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<app-footer2></app-footer2>

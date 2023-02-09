@@ -1,0 +1,22 @@
+<app-navbar [src]="src" [path]="path"></app-navbar>
+<div class="text-center container-sm" style="text-align: center;">
+    <h1 class="pt-5 pb-5" style="font-family: Cinzel, serif;text-align: center;color: #9e7f55;">Coloration cheveux<br /></h1>
+    <h6 class="pb-5" style="font-family: Cinzel, serif;text-align: center;color: #9e7f55;"><br />la maison lobna ben ammar<br /></h6>
+    <p class="text-start pb-5" style="font-family: Cinzel, serif;text-align: center;">Seul votre coloriste peut personnaliser votre couleur et l’adapter Ã vos besoins et envies. Des milliers de nuances sont disponibles parmi toutes nos gammes de coloration professionnelle.<br /></p>
+</div>
+
+<div class="pt-5 pb-4 d-flex justify-content-center">
+    <div class="container">
+        <div class="row pb-4" *ngFor="let container of data">
+            <div class="col-md-3" *ngFor="let image of container">
+                <div class="card">
+                    <div class="card-body">
+                        <app-ab [img1]="image.img1" [img2]="image.img2"></app-ab>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer2></app-footer2>

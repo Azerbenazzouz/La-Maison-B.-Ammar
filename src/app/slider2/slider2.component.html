@@ -1,0 +1,25 @@
+<h1 class="pt-5 pb-5" style="font-family: Cinzel, serif;text-align: center;color: #9e7f55;" *ngIf="title">{{title}}<br></h1>
+<div [style.background-color]="colors[colorNumber]">
+  <div class="container py-5">
+    <div id={{divId}} class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item {{i==0 ? 'active' : ''}}"  *ngFor="let rows of data let i = index">
+            <div class="row row-cols-3 d-flex justify-content-center">
+                <div [ngClass]="cols" *ngFor="let row of rows">
+                        <img style="width: 100%" src={{row}} alt="" srcset="">
+                </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" [attr.data-bs-target]="'#' + divId" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" [attr.data-bs-target]="'#' + divId" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+  </div>
+</div>
+
